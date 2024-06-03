@@ -116,6 +116,7 @@
         transition: background-color 0.3s;
         align-self: center;
         margin-bottom:var(--spaceS) ;
+      
      
         
      
@@ -336,26 +337,28 @@ strong {
     max-width: 20rem;
     margin-bottom: var(--margin-m);
     display: flex;
-    gap:.8rem;
    flex-direction: row;
    align-items: flex-start;
+   padding:.8rem;
 
 
 }
 
 .testimonial-img{
    max-width: 6rem;
-   height: 6rem;
    width: auto;
+   height: 6rem;
    object-fit: contain;
    margin-bottom:var(--margin-xxs);
    width: 100%; /* Ensure the image scales down as well */
-   border-radius: ;
+
   
- 
 
 
 
+}
+.testimonial{
+    padding: .6rem;
 }
 .testimonial-firm-logo{
     width: 45%;
@@ -372,6 +375,7 @@ strong {
     font-style: italic;
     margin-bottom: var(--margin-s);
     font-weight: 500;
+
  
 
 
@@ -489,6 +493,59 @@ strong {
 
 /** -------------------------------------------------------------------------------------- */
 /** -------------------------------------------------------------------------------------- */
+
+
+/** DIALOG DiALOG */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Style for modal content */
+.modal-content {
+    background-color:var(--bgLightandText);
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border: 1px solid var(--secondary600);
+}
+
+/** HEadline for Button */
+.dialog-button-headline{
+color: var(--primary600);
+font-size: var(--fontM);
+margin-bottom: 1.2rem;
+}
+
+
+/* Style for close button */
+.close {
+    color:var(--secondary600);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--accentColor);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#message{
+  width: clamp(12rem, 50%, 22rem);
+}
+
 
 
 /* style for mobiles default*/
@@ -666,6 +723,7 @@ strong {
     flex-wrap: nowrap;
     text-align: left;
     align-items: center;
+ 
     
  
 
@@ -713,7 +771,10 @@ margin-bottom:var(--margin-xs) ;
         flex-wrap: nowrap;
         text-align: left;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content:space-evenly ;
+    
+       
+
      
 
         
@@ -804,3 +865,8 @@ margin-bottom:var(--margin-xs) ;
 
      
 }
+
+
+
+
+/** <button class="CTA" >See it in action</button> */
