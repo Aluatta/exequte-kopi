@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
         <title>exeQute-kopi</title>
 </head>
@@ -61,22 +62,33 @@
                 <h1 class="hero-tagline" > All-in-one system for daily task automation
                 </h1>
                 <h2 class="subheader" > cross collaboraton platform for <br>small companies</h2>
-                <button class="CTA" id="openDialog">Book Demo</button>
-<section id="contactFormDialog" class="modal">
-    <article class="modal-content">
-        <span class="close">&times;</span>
-        <h3 class="dialog-button-headline" >Book Your Demo</h3>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input   type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </article>
-</section>
+                <button class="CTA" id="openDialog">Book Demo Now</button>
+                <section id="contactFormDialog" class="modal">
+                    <article class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 class="contact-form-headline" >book your demo</h2>
+
+                        <form id="contactForm">
+                            <label for="name">Name:</label>
+                            <input class="contactForm-file --name"  type="text" id="name" name="Name" required placeholder="Name"><br><br>
+            
+                            <label   for="Email">Email:</label>
+                            <input  class="contactForm-file --email" type="email" id="email" name="email" required 
+                            placeholder="Email@email.com" ><br><br>
+                          
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4" required placeholder="Type your message here ..."></textarea><br><br>
+
+
+
+                            <label for="date">Select Date:</label>
+                            <input  placeholder="Click here"type="text" id="date" name="date" required  ><br><br>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </article>
+                </section>
+
                
                 <p class="reduce-fear-cta-text" > Get a free consulation and </p>
                 <p class="reduce-fear-cta-text --last-line" >personal demo of the system </p>
@@ -182,9 +194,10 @@
             </article>
            
           
-            
-
         </section>
+
+       
+        
 
         <section class="exequte-collaboration-system-container" >
             <img class="icone-collaboration2"  src="img/logo-blue-primary-small.png" alt="collaboration icon" >
@@ -220,7 +233,9 @@
         
         <p class="text-copyright" >Copyright © exeQte ApS 2024  </p>
     </footer>
-<script src="javascript.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="javascript.js"></script>
 
 </body>
 </html>
