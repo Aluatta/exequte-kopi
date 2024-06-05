@@ -528,7 +528,16 @@ strong {
     color:var(--accentColor);
 }
 
+/** change h4 using direct child selector  */
+.modal-content > h4 {
+    color:var(--bgLightandText); 
+    font-size: 1.5rem; 
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    font-weight: 400;
 
+  
+}
     
 label {
     display: block;
