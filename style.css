@@ -233,6 +233,7 @@ main {
     justify-content: center;
    
    
+   
 }
 .logo-hero{
     align-self: center;
@@ -258,6 +259,10 @@ main {
    
 
 }
+.hero-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .text-XL{
     font-size: 1.75rem;
 
@@ -280,6 +285,8 @@ main {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #3F86CB 0%, #2F7DC9 8.69%, #065BAE 52.19%, #073D72 100%);
     margin-bottom: var(--margin-separator);
     font-size: clamp(1.125rem, 1.4rem, 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
    
 }
     
@@ -316,8 +323,11 @@ strong {
 /** TEATIMONIALS SECTION */
 .testimonials-container{
     justify-content: center;
-    padding: 20px ;
-    line-height:1.4 ;
+    padding: 20px;
+    line-height:1.4;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     
    
 
@@ -395,7 +405,10 @@ strong {
     color: var(--bgLightandText);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #3F86CB 0%, #2F7DC9 8.69%, #065BAE 52.19%, #073D72 100%);
     line-height: 1.612;
+    padding-left: 1rem;
+    padding-right: 1rem;
  
+
 
 
 
@@ -445,6 +458,8 @@ strong {
 .exequte-collaboration-system-container{
     padding: 4rem 1rem;
     line-height: 1.612;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 
 
@@ -470,7 +485,9 @@ strong {
     color: var(--bgLightandText);
     padding: 3rem;
     font-size: clamp(14px,16px );
-      line-height: 1.612;
+    line-height: 1.612;
+    padding-left: 1rem;
+    padding-right: 1rem;
   
 }
 .p-text-heavy{
@@ -517,8 +534,8 @@ strong {
     padding-top: 8px;
     padding-bottom: 8px;      
     border-radius: 6px;
-    min-width: 6rem; /**??? */
-    /**    width: clamp(90%, 40%, 60%); */
+    width: clamp(10rem, auto, 382px); /**??? */
+
 
 
  
@@ -640,6 +657,7 @@ textarea {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        max-width: 100%
 
         
 
@@ -710,7 +728,9 @@ textarea {
     .nav-link:active {
     color: var(--accentColor);
 
-    }.nav-menu {     /** rulling out */  
+    }
+    
+    .nav-menu {     /** rulling out */  
         width: 640px;
         position: fixed;
         left: -100%;
@@ -793,10 +813,10 @@ textarea {
 }
 
 
-
 .vpc{
     padding-top:var(--padding-xxl);
     padding-bottom: var(--padding-xxl);
+    
 }
 
 .product-features{
@@ -811,6 +831,7 @@ textarea {
     flex-wrap: nowrap;
     text-align: left;
     align-items: center;
+   
  
     
  
@@ -851,6 +872,7 @@ margin-bottom:var(--margin-xs) ;
     .hero-container{
         display: grid;
         grid-template-columns: 25% 1fr 28%;
+        max-width: clamp(300px, 90vw, 1000px);  /** to assure at this container will not expand too much */
 
     }
     .testimonials-container{
