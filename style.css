@@ -517,6 +517,7 @@ strong {
     padding-top: 8px;
     padding-bottom: 8px;      
     border-radius: 6px;
+    min-width: 6rem; /**??? */
     /**    width: clamp(90%, 40%, 60%); */
 
 
@@ -526,6 +527,7 @@ strong {
 }
 .contactForm.--date::placeholder {
     color:var(--accentColor);
+ 
 }
 
 /** change h4 using direct child selector  */
