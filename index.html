@@ -80,8 +80,6 @@
                             <label for="message">Message:</label><br>
                             <textarea id="message" name="message" rows="4" required placeholder="Type your message here ..."></textarea><br><br>
 
-
-
                             <label for="date"></label>
                             <input   class="contactForm --date"   placeholder="Select Date"type="text" id="date" name="date" required  ><br><br>
 
@@ -126,7 +124,6 @@
         <h2 class="text-large --testimonial-headline" > What our customers say</h2>
 
         <section class="testimonials-container">
-           
             <section class="testimonial-card" >
                 <img  class="testimonial-img" src="img/man-face-1.jpg" alt="man face picture">
                 <article class="testimonial" >  
@@ -167,25 +164,25 @@
                 <article class="product-features-card" > 
                     <img  class="icone" src="img/clock-1.svg" alt="clock icon">
                     <h2 class="product-features-card-headline"  >Time registration </h2>
-                    <p class="product-features-card-desctiption " >Starting July 1st, a new law requires all working hours to be registered. Our platform has this feature built-in, ensuring you stay compliant effortlessly.</p>
+                    <p class="product-features-card-desctiption" itemprop="description" >Starting July 1st, a new law requires all working hours to be registered. Our platform has this feature built-in, ensuring you stay compliant effortlessly.</p>
                 </article>
 
                 <article class="product-features-card" > 
                     <img  class="icone" src="img/Icon-Box.svg" alt="box icone">
                     <h2 class="product-features-card-headline" >Document Control & digitalisation </h2>
-                    <p class="product-features-card-desctiption">You get control over documents access permissions, and version control what prevent sconfusion and assures consistency across the organization.  You get documented trail of changes, approvals, reviews, trainings  and much more!</p>
+                    <p class="product-features-card-desctiption" itemprop="description" >You get control over documents access permissions, and version control what prevent sconfusion and assures consistency across the organization.  You get documented trail of changes, approvals, reviews, trainings  and much more!</p>
                 </article>
 
                 <article class="product-features-card" > 
                     <img  class="icone" src="img/SpeachBubble.svg" alt="speach bubble icone">
                     <h2 class="product-features-card-headline">Cross-Communication</h2>
-                    <p class="product-features-card-desctiption">System  support seamless communication with both internal and external suppliers, ensuring error-free processes due to misunderstandings. All in one place.</p>
+                    <p class="product-features-card-desctiption"itemprop="description"  >System  support seamless communication with both internal and external suppliers, ensuring error-free processes due to misunderstandings. All in one place.</p>
                 </article>
 
                 <article class="product-features-card" > 
                     <img  class="icone" src="img/Icon-Person.svg" alt="speach bubble icone">
                     <h2 class="product-features-card-headline">Cross-Collaboration Platform</h2>
-                    <p class="product-features-card-desctiption">Living system of interconnected  and distributed teams,  coordinated according Plan-Do-Check-Act  Cycle. We help achieve efficiency , that boosts and drives better business outcomes.</p>
+                    <p class="product-features-card-desctiption" itemprop="description" >Living system of interconnected  and distributed teams,  coordinated according Plan-Do-Check-Act  Cycle. We help achieve efficiency , that boosts and drives better business outcomes.</p>
                 </article>
 
                 <h6 class="product-features-cta-headline" >See how it works</h6>
@@ -203,7 +200,10 @@
         <section class="exequte-collaboration-system-container" >
             <img class="icone-collaboration2"  src="img/logo-blue-primary-small.png" alt="collaboration icon" >
             <h6 class="headline-xs" > Flexible system the unifies</h6>
-            <p class="p-text-collaboration-exequte" >Our platform is specifically designed to meet the unique needs of small and midsize businesses. Whether you're a team member, a leader, or a CEO/owner, you'll find features that enhance collaboration, streamline processes, and drive success. </p>
+            <p class="p-text-collaboration-exequte" itemscope itemtype="http://schema.org/Product">
+            Our platform is specifically designed to meet the unique needs of small and midsize businesses. Whether you're a team member, a leader, or a CEO/owner, you'll find features that enhance collaboration, streamline processes, and drive success. 
+            This product is certified by <span itemprop="award">ISO 9001</span>.
+        </p>
             <h6 class="headline-xs" >Follow US on LinkedIn </h6>
             
             <a href="https://www.linkedin.com" target="_blank" class="linkedin-link">
@@ -215,6 +215,9 @@
 
         </section>
 
+        
+        
+
       
        
       
@@ -225,12 +228,12 @@
             <p class="p-text" itemprop="streetAddress">Jernbanegade 10,</p>
             <p class="p-text" itemprop="addressLocality">6400 Sønderborg</p>
         </section>
-        <section class="footer-contact-us" > 
+        <section class="footer-contact-us" itemscope itemtype="http://schema.org/Organization" > 
             <p class="p-text-heavy" >Contact us </p>
-            <p class="p-text">e-mail: info@exequte.com</p>
-            <p class="p-text">tel. +45 25 66 78 99  </p>
+            <p class="p-text text-contact-email">e-mail: <a href="mailto:info@exequte.com" itemprop="email">info@exequte.com</a></p>
+            <p class="p-text ">tel. <span itemprop="telephone">+45 25 66 78 99</span></p>
         </section>
-        
+        </section>
         <p class="text-copyright" >Copyright © exeQute ApS 2024  </p>
     </footer>
     
