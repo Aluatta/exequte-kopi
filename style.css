@@ -232,9 +232,12 @@ main {
     flex-direction: column;
     justify-content: center;
    
+
+   
    
    
 }
+
 .logo-hero{
     align-self: center;
     max-height: 4vh;
@@ -262,6 +265,8 @@ main {
 .hero-container{
     padding-left: 1rem;
     padding-right: 1rem;
+    margin:0 auto;
+   
 }
 .text-XL{
     font-size: 1.75rem;
@@ -864,6 +869,8 @@ margin-bottom:var(--margin-xs) ;
         max-width: clamp(400px, 50%, 42vw);
         width: 100%; /* Ensure the image scales down as well */
         height: auto; /* Maintain aspect ratio */
+        margin-bottom: 2.4rem;
+      
    
         
 
@@ -872,7 +879,9 @@ margin-bottom:var(--margin-xs) ;
     .hero-container{
         display: grid;
         grid-template-columns: 25% 1fr 28%;
-        max-width: clamp(300px, 90vw, 1000px);  /** to assure at this container will not expand too much */
+        max-width: clamp(260px, 100%, 98rem);  /** to assure at this container will not expand too much */
+       
+       
 
     }
     .testimonials-container{
