@@ -27,14 +27,22 @@ document.addEventListener('touchend', function(event) {
     }
 });
 
-/**  Calendar  */
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Flatpickr
     flatpickr("#date", {
-        enableTime: true, //aCtivated houes
+        enableTime: true, // Disable time picker
         dateFormat: "Y-m-d", // Date format
-        minDate: "today" // Minimum selectable date is today
+        minDate: "today",// Minimum selectable date is today
+        onChange: function(selectedDates, dateStr, instance) {
+            // Change label to "Selected Date" when a date is picked
+            document.getElementById('date-label').textContent = 'Selected Date';
+            // Hide the calendar icon
+            document.querySelector('.calendar-icon').style.display = 'none';
+        }
     });
+        
+        
 
     // Get the modal
     let modal = document.getElementById("contactFormDialog");
@@ -87,84 +95,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
+
+     // Dodajemy obsługę kliknięcia na ikonę
+  document.querySelector('.calendar-icon').addEventListener('click', function() {
+    document.getElementById('date').focus(); // Po kliknięciu przenosi fokus do pola daty, co uruchamia kalendarz
+});
 });
 
-/** __________________________ */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** // Get the modal
-var modal = document.getElementById("contactFormDialog");
-
-// Get the button that opens the modal
-var btn = document.getElementById("openDialog");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-// Submit form action (in this example, just prevent the default behavior)
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    // Add your form submission logic here
-});*/
-
-
-/** <button class="CTA" id="openDialog">Book Demo</button>
-<section id="contactFormDialog" class="modal">
-    <article class="modal-content">
-        <span class="close">&times;</span>
-        <h3 class="dialog-button-headline" >Book Your Demo</h3>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input   type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </article>
-</section> */
-
-
-
-
-/** */
-
+ 
 
 
 
