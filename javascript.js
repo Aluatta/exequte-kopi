@@ -27,23 +27,23 @@ document.addEventListener('touchend', function(event) {
     }
 });
 
-
+/**  Calendar  */
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Flatpickr
     flatpickr("#date", {
-        enableTime: false, // Disable time picker
+        enableTime: true, //aCtivated houes
         dateFormat: "Y-m-d", // Date format
         minDate: "today" // Minimum selectable date is today
     });
 
     // Get the modal
-    var modal = document.getElementById("contactFormDialog");
+    let modal = document.getElementById("contactFormDialog");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("openDialog");
+    let btn = document.getElementById("openDialog");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
