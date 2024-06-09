@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         enableTime: true, // Disable time picker
         dateFormat: "Y-m-d", // Date format
         minDate: "today",// Minimum selectable date is today
+        disableMobile: false,
         onChange: function(selectedDates, dateStr, instance) {
             // Change label to "Selected Date" when a date is picked
             document.getElementById('date-label').textContent = 'Selected Date';

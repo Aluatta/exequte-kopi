@@ -913,7 +913,6 @@ margin-bottom:2rem ;
 
 
 
-
     /** -------------------------------------------------------------------------------------- */
     /* style for tablets*/
 
@@ -1001,7 +1000,17 @@ margin-bottom:2rem ;
     }
    
 
+/**_______ */
 
+  #date {
+    padding: 10px;
+    font-size: 16px;
+  
+}
+
+.touch-pointer {
+    cursor: pointer;
+}
 
 }
 
@@ -1048,6 +1057,6 @@ margin-bottom:2rem ;
     max-width: 34rem;
      
     }
-
-     
+    
+   
 }
