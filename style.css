@@ -558,10 +558,10 @@ label {
     display: block;
     margin-bottom: 2px;
     font-weight: 300;
+   
  
  
 }
-
 
 
 .modal-content {
@@ -571,7 +571,10 @@ label {
     padding: 20px;
     border: 1px solid var(--primary500);
     position:relative;
-    width: 90%; /* Default width for small screens */
+    width: 100%; /* Default width for small screens */
+    max-width: 90vw;
+
+   
   
 }
   
