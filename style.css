@@ -447,8 +447,7 @@ strong {
     margin-bottom:var(--margin-separator) ;
 }
 .product-features-card-headline{
-    margin-bottom: var(--margin-m);
-    padding-top:var(--margin-xs) ;
+    margin-bottom:6px;
     text-transform: capitalize;
     font-weight: 600;
 }
@@ -673,6 +672,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     
+    
   
 }
 .date-picker input {
@@ -681,6 +681,7 @@ textarea {
   
    
  }
+
 
 .calendar-icon{
 font-size: 2.5rem;
