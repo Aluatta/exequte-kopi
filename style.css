@@ -681,9 +681,13 @@ textarea {
 .date-picker input {
     border: none;
     align-self: center;
+ 
   
    
  }
+ .date-picker.{
+    color: red;
+}
 
 
 .calendar-icon{
@@ -918,8 +922,12 @@ margin-bottom:2rem ;
 }
 
 #date::placeholder {
-    color: whitesmoke;
-    border: none;
+    color: var(--primary600);
+    border: 1px solid white ;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 4px;
 }
 
 
@@ -1076,7 +1084,10 @@ margin-bottom:2rem ;
     }
     #date::placeholder {
         color: transparent;
+        background-color: inherit;
+        border: none;
     }
+  
     
    
 }
