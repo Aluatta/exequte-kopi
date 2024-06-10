@@ -358,6 +358,8 @@ strong {
    object-fit: contain;
    margin-bottom:var(--margin-xxs);
    width: 100%; /* Ensure the image scales down as well */
+   border-radius: 70%;
+   border: solid 1px grey;
 
   
 
@@ -369,7 +371,7 @@ strong {
 }
 .testimonial-firm-logo{
     width: 45%;
-    margin-bottom:var(--margin-s);
+    margin-bottom:4px;
     height: auto; /* Maintain aspect ratio */
 
  
@@ -380,22 +382,26 @@ strong {
 }
 .testimonial-quote{
     font-style: italic;
-    margin-bottom: var(--margin-s);
+    margin-bottom:4px;
     font-weight: 500;
+    color:var(--secondary600);
+    line-height: normal;
+    font-size: 1rem;
 
  
 
 
 }
 .testimonial-person{
-    font-weight: 400;
+    font-weight: 600;
     color:var(--secondary800Text);
 
 }
 .testimonial-person-position{
-    margin-bottom: var(--margin-xl);
     text-transform: capitalize;
     color: var(--secondary800Text);
+    line-height: 1;
+    font-size: .7rem;
  
 
 
@@ -685,7 +691,7 @@ textarea {
   
    
  }
- .date-picker.{
+ .date-picker{
     color: red;
 }
 
@@ -904,9 +910,6 @@ margin-bottom: 8px;
 
 }
 
-.footer-address{
-margin-bottom:2rem ;
-}
 .footer-contact-us{
     margin-bottom: 3.3rem;
 }   
