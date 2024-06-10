@@ -415,6 +415,7 @@ strong {
     line-height: 1.612;
     padding-left: 1rem;
     padding-right: 1rem;
+
  
 
 
@@ -434,7 +435,7 @@ strong {
     font-size:var(--fontXL);
     text-transform: capitalize;
     font-weight: 600;
-    margin-bottom: 4.2rem;
+    margin-bottom: 5rem;
     line-height: normal;
 }
 
