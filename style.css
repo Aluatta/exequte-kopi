@@ -914,6 +914,10 @@ margin-bottom:2rem ;
     color:rgb(133, 224, 244)}
 }
 
+#date::placeholder {
+    color: whitesmoke;
+}
+
 
 
 
@@ -925,6 +929,7 @@ margin-bottom:2rem ;
     body{
         text-align: center;
     }
+   
     .vpc{
         min-height:auto;}
 
@@ -1060,6 +1065,12 @@ margin-bottom:2rem ;
     .modal-content {
     max-width: 34rem;
      
+    }
+    .date-picker{
+        border: none;
+    }
+    #date::placeholder {
+        color: transparent;
     }
     
    
