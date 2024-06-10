@@ -581,6 +581,11 @@ label {
     position:relative;
     width: 100%; /* Default width for small screens */
     max-width: 90vw;
+   
+
+  
+
+  
 
    
   
@@ -679,7 +684,7 @@ textarea {
     display: block;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     
     
   
@@ -691,10 +696,6 @@ textarea {
   
    
  }
- .date-picker{
-    color: red;
-}
-
 
 .calendar-icon{
 font-size: 2.5rem;
@@ -925,16 +926,24 @@ margin-bottom: 8px;
 }
 
 #date::placeholder {
-    color: var(--primary600);
-    border: 1px solid white ;
-    background-color: white;
+    color:#073D72;
     font-size: 1rem;
     font-weight: 300;
-    border-radius: 4px;
+
 }
 
 .date-picker{
-    border: red 1px solid;
+    background-color: var(--bgLightandText);
+    color:#073D72;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 17.8rem;
+    margin: auto;
+
+ 
+   
 }
 
 
@@ -946,7 +955,21 @@ margin-bottom: 8px;
     body{
         text-align: center;
     }
-   
+    #date::placeholder {
+        color:inherit;
+    }
+
+    .date-picker{
+        background-color:inherit;
+        color:whitesmoke;
+        border: none;
+        max-width: 100%;
+        margin: auto;
+    
+     
+       
+    }
+    
     .vpc{
         min-height:auto;}
 
