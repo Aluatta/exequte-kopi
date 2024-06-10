@@ -404,7 +404,7 @@ strong {
     margin-bottom: var(--margin-m);
 
 }
-
+/** Product Features Section */
 
 .product-features-container{
     display: flex;
@@ -434,7 +434,7 @@ strong {
     font-size:var(--fontXL);
     text-transform: capitalize;
     font-weight: 600;
-    margin-bottom: var(--margin-xl);
+    margin-bottom: 4.2rem;
     line-height: normal;
 }
 
@@ -917,6 +917,7 @@ margin-bottom:2rem ;
 
 #date::placeholder {
     color: whitesmoke;
+    border: none;
 }
 
 
