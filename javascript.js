@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize Flatpickr
     flatpickr("#date", {
         enableTime: true, // Disable time picker
-        dateFormat: "Y-m-d", // Date format
+        dateFormat: "Y-m-d H:i", // Date format with time
         minDate: "today",// Minimum selectable date is today
         disableMobile: false,
         onChange: function(selectedDates, dateStr, instance) {
