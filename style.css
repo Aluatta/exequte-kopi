@@ -452,6 +452,7 @@ strong {
     margin-bottom:6px;
     text-transform: capitalize;
     font-weight: 600;
+    line-height: normal;
 }
 .product-features-cta-headline{
     font-size:var(--fontXS) ;
