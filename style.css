@@ -148,6 +148,7 @@
         p{
             font-size: 1rem;
             font-weight: 300;
+
           
         }
         li {
@@ -915,9 +916,11 @@ margin-bottom: 8px;
     margin-bottom: 3.3rem;
 }   
 
-
 .text-copyright {
     margin-top: 1rem;
+}
+.footer-address p:last-of-type {
+    margin-bottom: 2rem;
 }
 
 

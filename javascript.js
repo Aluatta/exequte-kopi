@@ -27,11 +27,11 @@ document.addEventListener('touchend', function(event) {
     }
 });
 
-
+/**  Picker Date Formular  */
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Flatpickr
     flatpickr("#date", {
-        enableTime: true, // Disable time picker
+        enableTime: true, // Disable time picker----różne opcje konfiguracji dla widżetu kalendarza.
         dateFormat: "Y-m-d H:i", // Date format with time
         minDate: "today",// Minimum selectable date is today
         disableMobile: false,
@@ -44,17 +44,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         
         
-
-    // Get the modal
+    // Get the modal: do pobrania elementu HTML o identyfikatorze contactFormDialog.
     let modal = document.getElementById("contactFormDialog");
 
-    // Get the button that opens the modal
+    // Get the button that opens the modal-przycisk, który użytkownik kliknie, aby otworzyć modal.
     let btn = document.getElementById("openDialog");
 
     // Get the <span> element that closes the modal
     let span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
+
+
+
+
+
+    // When the user clicks the button, open the modal - przypisujemy fcje = 
     btn.onclick = function() {
         modal.style.display = "block";
     }
@@ -70,8 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     }
+/**_____________________________________________________ */
 
-    // Submit form action (in this example, just prevent the default behavior)
+    // Submit form  & prevent the default behavior)
     document.getElementById("contactForm").addEventListener("submit", function(event) {
         event.preventDefault();
         // Here you can add logic to send the form data to your server
@@ -79,13 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
         showModal("You have sucessfully booked demo.<br> Our expert will contact you within 1 business day.");
     });
 
+
     // Function to display a modal with a message
     function showModal(message) {
-        var modalContent = document.querySelector('.modal-content');
+        let modalContent = document.querySelector('.modal-content');
         modalContent.innerHTML = '<span class="close">&times;</span><h4>' + message + '</h4>';
         modal.style.display = "block";
         // Close the modal when the user clicks on <span> (x)
-        var closeBtn = document.getElementsByClassName("close")[0];
+        let closeBtn = document.getElementsByClassName("close")[0];
         closeBtn.onclick = function() {
             modal.style.display = "none";
         }
